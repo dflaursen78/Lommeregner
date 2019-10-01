@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lommeregner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="table responsive">
+    <div class="kasse">
+      <div class="container">
+        <div class="form-group">
+
+          <input class="form-control" id="calculate">
+        </div>
+        <div class="form-group">
+
+          <input class="form-control" id="results">
+
+        </div>
+        <div class="dropright" style="text-align:left; padding-left: 6px;">
+        <button class="btn btn-info btn-sm" type="button" data-toggle="dropdown">dec
+          </button>
+        <ul class="dropdown-menu xp-0" style="padding:0" x-placement="right-start">
+          <!--bredde på dropdown menu-->
+          <a class="dropdown-item" onclick="dec(this.innerHTML)">0</a>
+          <a class="dropdown-item" onclick="dec(this.innerHTML)">1</a>
+          <a class="dropdown-item" onclick="dec(this.innerHTML)">2</a>
+          <a class="dropdown-item" onclick="dec(this.innerHTML)">3</a>
+          <a class="dropdown-item" onclick="dec(this.innerHTML)">4</a>
+          <a class="dropdown-item" onclick="dec(this.innerHTML)">5</a>
+        </ul>
+      </div>
+    
+
+        <button onclick="mod()" type="button" class="btn btn-info btn-sm">mod</button>
+        <button onclick="pi()" type="button" class="btn btn-info btn-sm">π</button>
+        <button onclick="sin()" type="button" class="btn btn-info btn-sm">sin</button>
+        <button onclick="tan()" type="button" class="btn btn-info btn-sm">tan</button>
+        <button onclick="cos()" type="button" class="btn btn-info btn-sm">cos</button>
+        <button onclick="clearField()" type="button" class="btn btn-danger btn-sm">clear</button><br>
+
+        <button onclick="tal()" type="button" class="btn btn-outline-secondary bg-light btn-sm">tal</button>
+        <button onclick="sqrt()" type="button" class="btn btn-info btn-sm">√</button>
+        <button onclick="seven()" type="button" class="btn btn-outline-secondary bg-light btn-sm">7</button>
+        <button onclick="eight()" type="button" class="btn btn-outline-secondary bg-light btn-sm">8</button>
+        <button onclick="nine()" type="button" class="btn btn-outline-secondary bg-light btn-sm">9</button>
+        <button onclick="devide()" type="button" class="btn btn-secondary btn-sm">/</button><br>
+
+        <button onclick="hex()" type="button" class="btn btn-outline-secondary bg-light btn-sm">hex</button>
+        <button onclick="elevated()" type="button" class="btn btn-info btn-sm">^</button>
+        <button onclick="four()" type="button" class="btn btn-outline-secondary bg-light btn-sm">4</button>
+        <button onclick="five()" type="button" class="btn btn-outline-secondary bg-light btn-sm">5</button>
+        <button onclick="six()" type="button" class="btn btn-outline-secondary bg-light btn-sm">6</button>
+        <button onclick="multiply()" type="button" class="btn btn-secondary btn-sm">*</button><br>
+
+        <button onclick="bin()" type="button" class="btn btn-outline-secondary bg-light btn-sm">bin</button>
+        <button onclick="procent()" type="button" class="btn btn-info btn-sm">%</button>
+        <button onclick="one()" type="button" class="btn btn-outline-secondary bg-light btn-sm">1</button>
+        <button onclick="two()" type="button" class="btn btn-outline-secondary bg-light btn-sm">2</button>
+        <button onclick="three()" type="button" class="btn btn-outline-secondary bg-light btn-sm">3</button>
+        <button onclick="minus()" type="button" class="btn btn-secondary btn-sm">-</button><br>
+
+        <button onclick="octal()" type="button" class="btn btn-outline-secondary bg-light btn-sm">octal</button>
+        <button onclick="e()" type="button" class="btn btn-info btn-sm">e</button>
+        <button onclick="zero()" type="button" class="btn btn-outline-secondary bg-light btn-sm">0</button>
+        <button onclick="period()" type="button" class="btn btn-outline-secondary bg-light btn-sm">.</button>
+        <button onclick="equal()" type="button" class="btn btn-outline-secondary bg-light btn-sm">=</button>
+        <button onclick="plus()" type="button" class="btn btn-secondary btn-sm">+</button>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

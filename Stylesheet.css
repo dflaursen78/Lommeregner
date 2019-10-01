@@ -1,0 +1,34 @@
+.btn {
+    width: 60px;
+    margin: 2px auto;
+    border-radius: 10px !important;
+}
+ul a{
+    display: inline !important;
+    padding:10px !important;
+}
+#calculate {
+    width: 100%;
+    border-radius: 10px;
+    text-align: right;
+}
+
+#results {
+    width: 100%;
+    border-radius: 10px;
+    /* radius på textfeltets hjørner */
+    text-align: right;
+    /* det der bliver skrevet i feltet bliver rykket til højre side*/
+}
+
+.kasse {
+    text-align: center;
+    background-color: skyblue;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 425px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
